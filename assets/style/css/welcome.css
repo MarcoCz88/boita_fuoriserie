@@ -31,28 +31,26 @@
     width: 90vw;
     display: flex;
     align-items: center;
-    margin-left: 6%;
 }
 @media (min-width: 992px) {
     .imgCustom2{
         height: auto;
         width: 37vw;
         margin-top: -10%;
-        margin-left: 0%;
+
     }
 }
 .img3Custom{
     height: auto;
     width: 90vw;
     margin-top: 5%;
-    margin-left: 6%;
 }
 @media (min-width: 992px) {
     .img3Custom{
         margin-top: 0%;
         height: auto;
-        width: 39vw;
-        margin-left: 30%;
+        width: 38vw;
+        margin-left: 50%;
     }
 }
 .img4Custom{
@@ -109,9 +107,9 @@
 }
 @media (min-width: 992px) {
     .marginLeftcustom{
-        margin-left: 18%;
+        margin-left: 33%;
         text-align: right;
-        margin-top: -5%;
+        margin-top: 0%;
     }
 }
 .marginMissione{
@@ -119,7 +117,7 @@
 }
 @media (min-width: 992px) {
     .marginMissione{
-        margin-top: 15%;
+        margin-top: 10%;
     }
 }
 .mtFilosofia{
