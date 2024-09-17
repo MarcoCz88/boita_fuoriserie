@@ -1,0 +1,110 @@
+.roboto-serif-footer {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "GRAD" 0;
+}
+
+.footer {
+    background-color: #343a40; /* Grigio scuro */
+    padding: 20px 0;
+    color: #ffffff; /* Bianco */
+    width: 100%;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    align-items: center; /* Centra verticalmente gli elementi */
+}
+
+.footer-logo img {
+    height: 100%; /* Occupa l'intera altezza del footer */
+    max-height: 180px; /* Limita l'altezza massima */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links li {
+    width: auto; /* Rimuove la larghezza fissa */
+    text-align: center;
+}
+
+.footer-links a {
+    color: #ffffff; /* Bianco */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-direction: row; /* Dispone le icone in riga */
+    align-items: center; /* Centra le icone */
+}
+
+.footer-social a {
+    color: #ffffff; /* Bianco */
+    text-decoration: none;
+    margin: 10px; /* Aggiunge spazio tra le icone */
+    font-size: 2rem; /* Aumenta la dimensione delle icone */
+}
+
+.footer-social a:hover {
+    color: #d3d3d3; /* Colore delle icone al passaggio del mouse */
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff; /* Bianco */
+}
+
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-links li {
+        width: 45%; /* Due colonne affiancate */
+        text-align: center;
+    }
+
+    .footer-social {
+        margin-top: 20px;
+    }
+}
