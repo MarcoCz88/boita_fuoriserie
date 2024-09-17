@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boita Fuoriserie S.R.L.</title>
+    <!--FAVICON-->
+    <link rel="icon" href="./assets/media/favicon-boita.png" type="image/png">
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Collegamento al file CSS personalizzato -->
+    <link rel="stylesheet" href="./assets/style/css/style.css">
+    <!-- Collegamento a Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbarCustom navbar-expand-lg fixed-top">
+        <div class="container">
+            <div class="col-4 navbar-brand">
+                <a href="index.html">
+                    <img class="logoCustom" src="./assets/media/Boita_PNG_NERO.png" alt="Logo Boita Fuoriclasse S.R.L.">
+                </a>
+            </div>
+            <button class="navbar-toggler btnCustom" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-around text-center" id="navbarSupportedContent">
+                <ul class="navbar-nav oswald-front-navbar align-items-center fs-5">
+                    <li class="nav-item">
+                        <img class="logoCustom2 mt-2" src="./assets/media/Boita_PNG_NERO.png" alt="Logo Boita Fuoriclasse S.R.L.">
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="chiSiamoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CHI SIAMO
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="chiSiamoDropdown">
+                            <a class="dropdown-item" href="/#chisiamo">STORIA AZIENDALE</a>
+                            <a class="dropdown-item" href="/#visionemissione">MISSIONE & VISIONE</a>
+                            <a class="dropdown-item" href="/#filosofia">FILOSOFIA</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servizi.html">SERVIZI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="progetti.html">PROGETTI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contatti.html">CONTATTI</a>
+                    </li> 
+                </ul> 
+            </div>  
+        </div>
+    </nav>
+    <!-- Carosello -->
+    <div class="carousel-container oswald-front-carousel">
+        
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" space-between="30" effect="fade" navigation="true">
+            <swiper-slide>
+                <img src="./assets/media/boita_img1.jpg" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./assets/media/boita_img2.jpg" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./assets/media/boita_img3.jpg" />
+            </swiper-slide>
+            <swiper-slide>
+                <img src="./assets/media/boita_img4.jpg" />
+            </swiper-slide>
+        </swiper-container>
+        <div class="carousel-caption">
+            <h1>BOITA FUORISERIE</h1>
+            <p class="mb-4">Benvenuti sul sito di Boita Fuoriserie, l'azienda dedicata all'arte del restauro e alla preservazione dell'eleganza del passato, unendo la tradizione con la tecnologia moderna. La nostra missione è quella di garantire che ogni progetto che intraprendiamo sia eseguito con la massima precisione e rispetto per l'autenticità del veicolo, utilizzando tecniche moderne per migliorare la durabilità e la qualità delle nostre realizzazioni.</p>
+            <p id="chisiamo"></p>
+        </div>
+    </div>
+    <!--STORIA AZIENDALE-->
+    <div class="container mt-2 oswald-front-welcome">
+        <div class="row mt-storia">
+          <div class="col-12 col-md-6 mtstoria2 fs-3">
+            <h2>BREVE STORIA AZIENDALE</h2>
+            <p class="textCustom">
+              <strong>Boita Fuoriserie</strong> è stata fondata da <strong>Edoardo Garbo</strong> e <strong>Marco Cristofani</strong>, due appassionati del restauro e della lavorazione della lamiera, con una profonda conoscenza delle auto d'epoca e delle tecniche di costruzione tradizionali. L'azienda nasce con l'obiettivo di preservare l'aspetto classico e antico delle automobili storiche, combinando le più recenti tecnologie per garantire una qualità estrema e una durabilità nel tempo. Fondata su una visione di <strong>rispetto per il passato e innovazione per il futuro</strong>, Boita Fuoriserie si distingue per la sua capacità di riprodurre con precisione dettagli storici, migliorando al contempo la funzionalità e la longevità delle automobili.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img class="imgChiSiamo" src="./assets/media/boita_chisiamo.jpg" alt="foto progetto automobilistico">
+          </div>
+        </div>
+    </div>  
+    <!--IMMAGINE CHI SIAMO-->
+    <div class="container">
+        <div class="row">
+          <img class="imgVisione" src="./assets/media/boita_img5.jpg" alt="foto progetto automobilistico">
+        </div>   
+    </div>
+    <!--VISIONE & MISSIONE-->
+    <div id="visionemissione"></div> 
+    <div class="container marginV oswald-front-welcome">
+        <div class="row">
+          <div>
+            <img class="imgCustom2" src="./assets/media/boita_img7.jpg" alt="foto progetto automobilistico">
+          </div>
+          <div class="col-12 col-md-4 marginLeftcustom">
+            <h2>VISIONE E MISSIONE</h2>
+            <p>La visione di Boita Fuoriserie è quella di essere un punto di riferimento nel restauro e nella costruzione di auto d'epoca, unendo l'autenticità storica con le tecnologie moderne. Il nostro obiettivo è creare un equilibrio perfetto tra passato e futuro, preservando la bellezza e l'eleganza delle auto storiche e migliorando la loro qualità attraverso innovazioni tecnologiche.</p>
+          </div>
+
+          <div class="col-12 col-md-4 mt-3 ">
+            <p class="marginMissione">  Boita Fuoriserie si propone di preservare l'aspetto classico e antico delle automobili storiche senza snaturarne la storicità, utilizzando le tecnologie più avanzate per garantire una qualità estrema e una lunga durata nel tempo. La nostra missione è realizzare scocche e sotto scocche, con un'attenzione maniacale ai dettagli, offrendo un servizio di altissimo livello che rispetti l'autenticità del veicolo originale, migliorandone la funzionalità e la durabilità.</p>
+          </div>
+          <div >
+            <img class="img3Custom" src="./assets/media/boita_img6.png" alt="foto progetto automobilistico">
+          </div>
+        </div>
+    </div>
+    <!--FILOSOFIA-->
+    <div class="container" id="filosofia">
+        <div class="row  oswald-front-welcome mt-5">
+          <div class="col-12 col-md-5 col-md-7">
+                <img class="img4Custom" src="./assets/media/image4.jpg" alt="foto progetto automobilistico">
+          </div>
+          <div class="col-12 col-md-5 mtFilosofia">
+            <h2>FILOSOFIA</h2>
+            <p>La filosofia di Boita Fuoriserie si basa su tre pilastri fondamentali: Passione, Perfezione, e Tradizione. Ogni progetto che intraprendiamo è guidato dalla nostra dedizione nel mantenere vive le tecniche tradizionali di costruzione e restauro, arricchendole con l'innovazione tecnologica per offrire un prodotto di eccellenza. Crediamo fermamente nell'importanza di unire l'esperienza artigianale con la precisione delle moderne tecnologie, per creare automobili che non siano solo belle, ma anche funzionali e durature.</p>
+          </div>
+          
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p>© 2024 Il Mio Sito. Tutti i diritti riservati.</p>
+    </footer>
+
+    <!-- Collegamento a Bootstrap JS e dipendenze -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Collegamento al file JavaScript personalizzato -->
+    <script src="./assets/style/js/script.js"></script>
+</body>
+</html>

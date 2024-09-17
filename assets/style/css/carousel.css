@@ -1,0 +1,107 @@
+.oswald-front-carousel {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 73vh; /* 80% dell'altezza della pagina */
+    margin-top: 20%;
+}
+@media (min-width: 992px) {
+    .carousel-container {
+        margin-top: 0%;
+        height: 95vh;
+    }
+}
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    color: white;
+    text-align: center;
+    z-index: 10;
+    width: 100%;
+    margin-left: 35%;
+    margin-bottom: -5.5%;   
+}
+@media (min-width: 992px) {
+    .carousel-caption {
+        margin-bottom: -1.5%; 
+    }
+}
+
+.carousel-caption h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+@media (min-width: 992px) {
+  .carousel-caption h1 {
+    font-size: 3.2rem;
+  }
+}
+
+.carousel-caption p {
+  font-size: 1.3rem;
+}
+@media (min-width: 992px) {
+  .carousel-caption p {
+    font-size: 1.8rem;
+  }
+}
+.carousel-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.carousel-item img {
+  height: 500px; /* Imposta l'altezza desiderata */
+  object-fit: cover; /* Assicura che l'immagine copra l'intero contenitore */
+  width: 100%;
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+    transform: translateX(0);
+}
+html,
+body {
+  position: relative;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.carousel-caption h1,
+.carousel-caption p {
+  margin: 0;
+}
