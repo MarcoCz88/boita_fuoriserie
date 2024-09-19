@@ -1,125 +1,123 @@
-<!--FONT-->
-.oswald-front-welcome {
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+<!--FONT-- > .oswald-front-welcome {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
-<!--STORIA AZIENDALE-->
-.textCustom {
-    font-size: 1.4rem; /* Puoi regolare la dimensione secondo le tue necessità */
+<!--STORIA AZIENDALE-- > .textCustom {
+  font-size: 1.4rem; /* Puoi regolare la dimensione secondo le tue necessità */
+}
+a {
+  color: #fff;
+  text-decoration: none !important;
+  transform: 0.3s;
+  transition: 0.3s;
+}
+a:hover {
+  transform: 0.3s;
+  transition: 0.3s;
+  color: #fff !important;
+  opacity: 0.7;
+  text-decoration: none !important;
+}
+.imgChiSiamo {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: -1.5%;
+}
+img {
+  border-radius: 8px;
+  width: 100%;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-style: normal;
+}
+@media (min-width: 992px) {
+  .imgChiSiamo {
+    display: flex;
+    align-items: center;
   }
-.imgChiSiamo{
-    height: auto;
-    width: 95vw;
-    display: flex;
-    align-items: center;
-    margin-left: -1.5%;
+}
+.imgCustom2 {
+  width: 100%;
+  height: auto;
+  align-items: center;
 }
 @media (min-width: 992px) {
-    .imgChiSiamo{
-        height: 86vh;
-        width: 33vw;
-        display: flex;
-        align-items: center;
-        margin-top: -10%;
-        margin-left: 12%;
-        
-    }
-}
-.imgCustom2{
+  .imgCustom2 {
     height: auto;
-    width: 90vw;
-    display: flex;
-    align-items: center;
+  }
 }
-@media (min-width: 992px) {
-    .imgCustom2{
-        height: auto;
-        width: 37vw;
-        margin-top: -10%;
 
-    }
+@media (min-width: 992px) {
 }
-.img3Custom{
+.img4Custom {
+  height: auto;
+  width: 90vw;
+}
+@media (min-width: 992px) {
+  .img4Custom {
     height: auto;
-    width: 90vw;
+    width: 35vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .visioneMarginTop {
     margin-top: 5%;
-}
-@media (min-width: 992px) {
-    .img3Custom{
-        margin-top: 0%;
-        height: auto;
-        width: 38vw;
-        margin-left: 50%;
-    }
-}
-.img4Custom{
-    height: auto;
-    width: 90vw;
-}
-@media (min-width: 992px) {
-    .img4Custom{
-        height: auto;
-        width: 35vw;
-    }
-}
-
-@media (min-width: 992px) {
-    .visioneMarginTop{
-        margin-top: 5%;
-    }
+  }
 }
 
 .imgVisione {
-    max-width: 100%; /* Assicura che l'immagine non superi la larghezza del contenitore */
-    height: auto; /* Mantiene le proporzioni dell'immagine */
-    width: 100%; /* Imposta la larghezza desiderata, ad esempio 80% del contenitore */
-    display: block; /* Rimuove eventuali spazi bianchi sotto l'immagine */
-    margin: 0 auto; /* Centra l'immagine orizzontalmente */
-    margin-top: 5%;
+  max-width: 100%; /* Assicura che l'immagine non superi la larghezza del contenitore */
+  height: auto; /* Mantiene le proporzioni dell'immagine */
+  width: 100%; /* Imposta la larghezza desiderata, ad esempio 80% del contenitore */
+  display: block; /* Rimuove eventuali spazi bianchi sotto l'immagine */
+  margin: 0 auto; /* Centra l'immagine orizzontalmente */
+  border-radius: 24px !important;
 }
 
-.marginW{
-    margin-bottom: 30%;
+.marginW {
+  margin-bottom: 30%;
 }
 @media (min-width: 992px) {
-    .marginW{
-        margin-bottom: 10%;
-    }
+  .marginW {
+    margin-bottom: 10%;
+  }
 }
-.marginV{
-    margin-top: 20%;
+.marginV {
+  margin-top: 20%;
 }
 @media (min-width: 992px) {
-    .marginV{
-        margin-top: 10%;
-    }
-}
-.mt-storia{
+  .marginV {
     margin-top: 10%;
+  }
 }
-.mtstoria2{
-    margin-top: 5%;
+.mtstoria2 {
+  margin-top: 5%;
 }
-.marginLeftcustom{
-    margin-left: 0%;
+.marginLeftcustom {
+  margin-left: 0%;
+  margin-top: 10%;
+}
+@media (min-width: 992px) {
+  .marginLeftcustom {
+    margin-left: 33%;
+    text-align: right;
+    margin-top: 0%;
+  }
+}
+.marginMissione {
+  margin-top: 5%;
+}
+@media (min-width: 992px) {
+  .marginMissione {
     margin-top: 10%;
+  }
 }
-@media (min-width: 992px) {
-    .marginLeftcustom{
-        margin-left: 33%;
-        text-align: right;
-        margin-top: 0%;
-    }
-}
-.marginMissione{
-    margin-top: 5%;
-}
-@media (min-width: 992px) {
-    .marginMissione{
-        margin-top: 10%;
-    }
-}
-.mtFilosofia{
-    margin-top: 5%;
+.mtFilosofia {
+  margin-top: 5%;
 }
