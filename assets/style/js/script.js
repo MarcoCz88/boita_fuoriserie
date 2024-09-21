@@ -24,6 +24,7 @@ $(document).ready(function() {
         scrollbar: {
             el: '.swiper-scrollbar',
         },
+        
     });
   });
   //SERVIZI

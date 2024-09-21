@@ -30,7 +30,8 @@ a:hover {
   .imgChiSiamo {
     display: flex;
     align-items: center;
-    margin-left: 21%;
+    margin-left: 28%;
+    margin-top: 10%;
   }
 }
 img {
