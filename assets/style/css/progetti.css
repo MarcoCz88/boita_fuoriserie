@@ -1,0 +1,22 @@
+.dots {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.card-container {
+    display: none;
+}
+
+.card-container.active {
+    display: block;
+}

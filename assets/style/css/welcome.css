@@ -1,9 +1,9 @@
-<!--FONT-- > .oswald-front-welcome {
+.oswald-front-welcome {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
-<!--STORIA AZIENDALE-- > .textCustom {
+.textCustom {
   font-size: 1.4rem; /* Puoi regolare la dimensione secondo le tue necessità */
 }
 a {
@@ -24,7 +24,14 @@ a:hover {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-left: -1.5%;
+  margin-left: 1.5%;
+}
+@media (min-width: 992px) {
+  .imgChiSiamo {
+    display: flex;
+    align-items: center;
+    margin-left: 21%;
+  }
 }
 img {
   border-radius: 8px;
@@ -35,12 +42,7 @@ h2 {
   font-weight: 500;
   font-style: normal;
 }
-@media (min-width: 992px) {
-  .imgChiSiamo {
-    display: flex;
-    align-items: center;
-  }
-}
+
 .imgCustom2 {
   width: 100%;
   height: auto;
@@ -51,73 +53,16 @@ h2 {
     height: auto;
   }
 }
-
-@media (min-width: 992px) {
-}
-.img4Custom {
-  height: auto;
-  width: 90vw;
-}
-@media (min-width: 992px) {
-  .img4Custom {
-    height: auto;
-    width: 35vw;
-  }
-}
-
 @media (min-width: 992px) {
   .visioneMarginTop {
     margin-top: 5%;
   }
 }
-
 .imgVisione {
-  max-width: 100%; /* Assicura che l'immagine non superi la larghezza del contenitore */
-  height: auto; /* Mantiene le proporzioni dell'immagine */
-  width: 100%; /* Imposta la larghezza desiderata, ad esempio 80% del contenitore */
-  display: block; /* Rimuove eventuali spazi bianchi sotto l'immagine */
-  margin: 0 auto; /* Centra l'immagine orizzontalmente */
+  max-width: 100%; 
+  height: auto; 
+  width: 100%; 
+  display: block;
+  margin: 0 auto;
   border-radius: 24px !important;
-}
-
-.marginW {
-  margin-bottom: 30%;
-}
-@media (min-width: 992px) {
-  .marginW {
-    margin-bottom: 10%;
-  }
-}
-.marginV {
-  margin-top: 20%;
-}
-@media (min-width: 992px) {
-  .marginV {
-    margin-top: 10%;
-  }
-}
-.mtstoria2 {
-  margin-top: 5%;
-}
-.marginLeftcustom {
-  margin-left: 0%;
-  margin-top: 10%;
-}
-@media (min-width: 992px) {
-  .marginLeftcustom {
-    margin-left: 33%;
-    text-align: right;
-    margin-top: 0%;
-  }
-}
-.marginMissione {
-  margin-top: 5%;
-}
-@media (min-width: 992px) {
-  .marginMissione {
-    margin-top: 10%;
-  }
-}
-.mtFilosofia {
-  margin-top: 5%;
 }

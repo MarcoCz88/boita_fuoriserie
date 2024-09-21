@@ -17,47 +17,204 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- NAVBAR -->
+
     <nav class="navbar navbarCustom navbar-expand-lg fixed-top">
         <div class="container">
-            <div class="col-4 navbar-brand">
-                <a href="index.html">
-                    <img class="logoCustom" src="./assets/media/Boita_PNG_NERO.png" alt="Logo Boita Fuoriclasse S.R.L.">
+          <div class="col-4 navbar-brand">
+            <a href="index.html">
+              <img
+                class="logoCustom"
+                src="./assets/media/Boita_PNG_NERO.png"
+                alt="Logo Boita Fuoriclasse S.R.L."
+              />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler btnCustom"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="fas fa-bars"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarSupportedContent"
+          >
+            <ul
+              class="navbar-nav oswald-front-navbar align-items-center fs-5 mx-auto"
+            >
+              <li class="nav-item">
+                <img
+                  class="logoCustom2 mt-2"
+                  src="./assets/media/Boita_PNG_NERO.png"
+                  alt="Logo Boita Fuoriclasse S.R.L."
+                />
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="chiSiamoDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  CHI SIAMO
                 </a>
-            </div>
-            <button class="navbar-toggler btnCustom" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fas fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-around text-center" id="navbarSupportedContent">
-                <ul class="navbar-nav oswald-front-navbar align-items-center fs-5">
-                    <li class="nav-item">
-                        <img class="logoCustom2 mt-2" src="./assets/media/Boita_PNG_NERO.png" alt="Logo Boita Fuoriclasse S.R.L.">
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="chiSiamoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            CHI SIAMO
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="chiSiamoDropdown">
-                            <a class="dropdown-item" href="/#chisiamo">STORIA AZIENDALE</a>
-                            <a class="dropdown-item" href="/#visionemissione">MISSIONE & VISIONE</a>
-                            <a class="dropdown-item" href="/#filosofia">FILOSOFIA</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="servizi.html">SERVIZI</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="progetti.html">PROGETTI</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contatti.html">CONTATTI</a>
-                    </li> 
-                </ul> 
-            </div>  
+                <div class="dropdown-menu" aria-labelledby="chiSiamoDropdown">
+                  <a class="dropdown-item" href="/#chisiamo">STORIA AZIENDALE</a>
+                  <a class="dropdown-item" href="/#visionemissione"
+                    >MISSIONE & VISIONE</a
+                  >
+                  <a class="dropdown-item" href="/#filosofia">FILOSOFIA</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servizi.html">SERVIZI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="progetti.html">PROGETTI</a>
+              </li>
+            </ul>
+            <a class="btn btn-dark" href="contatti.html">CONTATTACI</a>
+          </div>
         </div>
-    </nav>
+      </nav>
 
-<!-- Collegamento a Bootstrap JS e dipendenze -->
+    <!--PROGETTI-->
+
+    <div class="container mt-5 oswald-front-servizi">
+        <div class="row mt-5 justify-content-center align-items-center">
+            <div class="mt-5 row justify-content-center align-items-center">
+                <p class="col-9 text-center mt-5" style="font-size: 1.7rem;">Nel corso degli anni,<strong>Boita Fuoriserie</strong> ha avuto l'onore di lavorare su alcuni dei modelli più iconici della storia automobilistica. Tra i nostri progetti più prestigiosi:</p>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="dots">
+                <span class="dot" data-target="card1"></span>
+                <span class="dot" data-target="card2"></span>
+                <span class="dot" data-target="card3"></span>
+                <span class="dot" data-target="card4"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mb-4 card-container active" id="card1">
+                <div class="card mt-5">
+                    <div class="row g-0 justify-content-center align-items-center">
+                        <div class="col-md-6">
+                            <img src="assets/media/lamborghini_miura.jpg" class="img-fluid rounded-start" alt="Lamborghini Miura">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Lamborghini Miura</h5>
+                                <p class="card-text">La costruzione e restauro della scocca di questo modello leggendario, rispettando i dettagli originali e migliorando la struttura con tecniche moderne.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-4 card-container" id="card2">
+                <div class="card mt-5">
+                    <div class="row g-0 justify-content-center align-items-center">
+                        <div class="col-md-6">
+                            <img src="assets/media/Mercedes_300.jpg" class="img-fluid rounded-start" alt="Mercedes 300 SL Coupé e Ali di Gabbiano">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Mercedes 300 SL Coupé e Ali di Gabbiano</h5>
+                                <p class="card-text">Lavorazioni su scocche e sotto scocche, con una cura particolare nella preservazione dell'eleganza e delle linee originali.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-4 card-container" id="card3">
+                <div class="card mt-5">
+                    <div class="row g-0 justify-content-center align-items-center">
+                        <div class="col-md-6">
+                            <img src="assets/media/Ferrari_275.jpeg" class="img-fluid rounded-start" alt="Ferrari 275 GTB">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Ferrari 275 GTB</h5>
+                                <p class="card-text">Realizzazione di strutture di supporto e finiture dettagliate, con l'utilizzo di materiali e tecnologie d'avanguardia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-4 card-container" id="card4">
+                <div class="card mt-5">
+                    <div class="row g-0 justify-content-center align-items-center">
+                        <div class="col-md-6">
+                            <img src="./assets/media/BMW_507.jpeg" class="img-fluid rounded-start" alt="BMW 507">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">BMW 507</h5>
+                                <p class="card-text">Costruzione di componenti critici della scocca, mantenendo l'integrità del design originale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+     
+    <footer class="footer mt-5">
+        <div class="container">
+          <div class="footer-content roboto-serif-footer">
+            <div class="footer-logo">
+              <img
+                src="assets/media/Boita_PNG_BIANCO.png"
+                alt="Logo Boita Fuoriserie"
+              />
+            </div>
+            <div class="footer-links">
+              <ul>
+                <li><a href="#chisiamo">Chi Siamo</a></li>
+                <li><a href="#visionemissione">Visione&Missione</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="#filosofia">Filosofia</a></li>
+                <li><a href="progetti.html">Progetti</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+              </ul>
+            </div>
+            <div class="social-section text-center mt-4">
+              <h4 class="bebas-neue-regular">Seguici su</h4>
+              <ul class="list-inline mt-3 fs-1 footer-social">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.facebook.com/boitafuoriserie/"
+                    target="_blank"
+                    ><i class="fab fa-facebook-square"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.instagram.com/boitafuoriserie/"
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>© 2024 Boita Fuoriserie S.R.L. All rights reserved.</p>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Collegamento a Bootstrap JS e dipendenze -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
