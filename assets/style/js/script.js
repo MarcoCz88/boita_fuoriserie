@@ -44,10 +44,15 @@ $(document).ready(function() {
     const dots = document.querySelectorAll('.dot');
     const cards = document.querySelectorAll('.card-container');
 
+    // Ensure the first card and dot are active on page load
+    cards[0].classList.add('active');
+    dots[0].classList.add('active');
+
     dots.forEach(dot => {
         dot.addEventListener('click', function() {
             const target = this.getAttribute('data-target');
 
+            // Update cards
             cards.forEach(card => {
                 if (card.id === target) {
                     card.classList.add('active');
@@ -55,6 +60,15 @@ $(document).ready(function() {
                     card.classList.remove('active');
                 }
             });
+
+            // Update dots
+            dots.forEach(d => {
+                if (d === this) {
+                    d.classList.add('active');
+                } else {
+                    d.classList.remove('active');
+                }
+            });
         });
     });
-  });
+});

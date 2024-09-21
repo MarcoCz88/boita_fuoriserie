@@ -13,6 +13,10 @@
     cursor: pointer;
 }
 
+.dot.active {
+    background-color: gray;
+}
+
 .card-container {
     display: none;
 }
