@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boita Fuoriserie S.R.L.</title>
+    <!--FAVICON-->
+    <link rel="icon" href="./assets/media/favicon-boita.png" type="image/png" />
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Collegamento al file CSS personalizzato -->
+    <link rel="stylesheet" href="./assets/style/css/style.css" />
+    <!-- Collegamento a Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+     
+    <nav class="navbar navbarCustom navbar-expand-lg fixed-top">
+      <div class="container">
+        <div class="col-4 navbar-brand">
+          <a href="index.html">
+            <img
+              class="logoCustom"
+              src="./assets/media/Boita_PNG_NERO.png"
+              alt="Logo Boita Fuoriclasse S.R.L."
+            />
+          </a>
+        </div>
+        <button
+          class="navbar-toggler btnCustom"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fas fa-bars"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav oswald-front-navbar align-items-center fs-5 mx-auto"
+          >
+            <li class="nav-item">
+              <img
+                class="logoCustom2 mt-2"
+                src="./assets/media/Boita_PNG_NERO.png"
+                alt="Logo Boita Fuoriclasse S.R.L."
+              />
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="chiSiamoDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                CHI SIAMO
+              </a>
+              <div class="dropdown-menu" aria-labelledby="chiSiamoDropdown">
+                <a class="dropdown-item" href="/#chisiamo">STORIA AZIENDALE</a>
+                <a class="dropdown-item" href="/#visionemissione"
+                  >MISSIONE & VISIONE</a
+                >
+                <a class="dropdown-item" href="/#filosofia">FILOSOFIA</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servizi.html">SERVIZI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="progetti.html">PROGETTI</a>
+            </li>
+          </ul>
+          <a class="btn btn-dark" href="contatti.html">CONTATTACI</a>
+        </div>
+      </div>
+    </nav>
+
+    <!--INFO CONTATTI-->
+    <div class="container mt-5 oswald-front-contatti">
+      <div class="row">
+        <div class="col-12 mt-2 text-center">
+          <h1 class="mt-5"></h1>
+        </div>
+      </div>
+      <div class="row mt-3 justify-content-center align-items-center">
+        <div class="col-11 col-md-auto text-center d-flex flex-column flex-md-row align-items-center">
+          <img src="./assets/media/Boita_PNG_NERO.png" alt="Logo Boita Fuoriserie S.R.L." style="max-width: 250px;">
+          <div class="d-inline-block ml-md-3 mt-3 mt-md-0 contattiCustom">
+            <h3><strong>Boita Fuoriserie S.R.L.</strong></h3>
+            <p>Indirizzo: Via Rivarossa 15, 10060 Piscina(TO), Italia</p>
+            <p>Telefono: +39 345 738 8767</p>
+            <p>Email: ut@boitafuoriserie.it</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FORM CONTATTI--> 
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <form>
+             <div class="form-group">
+               <label for="name">Nome</label>
+               <input type="text" class="form-control" id="name" placeholder="Inserisci il tuo nome">
+             </div>
+             <div class="form-group">
+               <label for="email">Email</label>
+               <input type="email" class="form-control" id="email" placeholder="Inserisci la tua email">
+             </div>
+             <div class="form-group">
+               <label for="message">Messaggio</label>
+               <textarea class="form-control" id="message" rows="5" placeholder="Inserisci il tuo messaggio"></textarea>
+             </div>
+             <button type="submit" class="btn btn-dark">Invia</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+
+    <!--FOOTER-->
+
+    <footer class="footer mt-5">
+     <div class="container">
+      <div class="footer-content roboto-serif-footer">
+        <div class="footer-logo">
+          <img
+            src="assets/media/Boita_PNG_BIANCO.png"
+            alt="Logo Boita Fuoriserie"
+          />
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="#chisiamo">Chi Siamo</a></li>
+            <li><a href="#visionemissione">Visione&Missione</a></li>
+            <li><a href="servizi.html">Servizi</a></li>
+            <li><a href="#filosofia">Filosofia</a></li>
+            <li><a href="progetti.html">Progetti</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+          </ul>
+        </div>
+        <div class="social-section text-center mt-4">
+          <h4 class="bebas-neue-regular">Seguici su</h4>
+          <ul class="list-inline mt-3 fs-1 footer-social">
+            <li class="list-inline-item">
+              <a
+                href="https://www.facebook.com/boitafuoriserie/"
+                target="_blank"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://www.instagram.com/boitafuoriserie/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Boita Fuoriserie S.R.L. All rights reserved.</p>
+      </div>
+     </div>
+    </footer>
+
+  <!-- Collegamento a Bootstrap JS e dipendenze -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Collegamento al file JavaScript personalizzato -->
+  <script src="./assets/style/js/script.js"></script>
+</body>
+</html>
