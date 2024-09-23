@@ -13,3 +13,11 @@
 
     }
 }
+.marginContatti{
+    margin-top: 5%;
+}
+@media (min-width: 992px) {
+    .marginContatti{
+        margin-top: -2%;
+    }
+}

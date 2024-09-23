@@ -43,6 +43,9 @@ h2 {
   font-weight: 500;
   font-style: normal;
 }
+p {
+  font-size: 1.3rem;
+}
 
 .imgCustom2 {
   width: 100%;
