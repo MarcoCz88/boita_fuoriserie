@@ -75,6 +75,6 @@ p {
 }
 @media (min-width: 992px) {
   .marginStoriaAziendale{
-    margin-top: -2%;
+    margin-top: 2%;
   }
 }

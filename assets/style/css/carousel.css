@@ -66,15 +66,15 @@ font-size: 1.3rem;
   overflow: hidden; /* Assicura che il contenuto non esca dai bordi */
 }
 .margincarousel{
-  margin-top: 25%;
+  margin-top: 16%;
 }
 @media (min-width: 992px) {
   .margincarousel{
-    margin-top: 7%;
+    margin-top: 4%;
   }
 }
 .margincarousel2{
-  margin-top: 24%;
+  margin-top: 25%;
 }
 @media (min-width: 992px) {
   .margincarousel2{

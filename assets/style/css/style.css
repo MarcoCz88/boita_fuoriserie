@@ -6,4 +6,6 @@
 @import "./progetti.css";
 @import "./contatti.css";
 
-
+body {
+    background-color: #f2ecec !important; /* Sostituisci con il colore desiderato */
+}
