@@ -10,7 +10,6 @@ $(document).ready(function() {
   
     // Inizializzare Swiper
     const swiper = new Swiper('.swiper-container', {
-        // Configurazione Swiper
         direction: 'horizontal',
         loop: true,
         pagination: {
@@ -21,10 +20,11 @@ $(document).ready(function() {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        scrollbar: {
-            el: '.swiper-scrollbar',
+        autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
         },
-        
+        effect: 'fade',
     });
   });
   //SERVIZI

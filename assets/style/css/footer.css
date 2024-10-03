@@ -1,11 +1,7 @@
 .roboto-serif-footer {
-    font-family: "Roboto Serif", serif;
-    font-optical-sizing: auto;
+    font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100,
-      "GRAD" 0;
 }
 
 .footer {
@@ -82,7 +78,6 @@
 
 .footer-bottom {
     text-align: center;
-    font-size: 14px;
     color: #ffffff; /* Bianco */
 }
 

@@ -26,7 +26,9 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   </head>
+
   <body>
+
     <!-- Navbar -->
      
     <nav class="navbar navbarCustom navbar-expand-lg fixed-top">
@@ -100,61 +102,51 @@
     <!-- Carosello -->
 
     <div class="carousel-container oswald-front-carousel margincarousel pt-5 rounded">
-      <swiper-container
-        class="mySwiper"
-        pagination="true"
-        pagination-clickable="true"
-        space-between="30"
-        effect="fade"
-        navigation="true"
-        loop="true"
-        autoplay="{
-          delay: 2000,
-          disableOnInteraction: false
-        }"
-        style="width: 98%; height: 75vh;"
-        >
-        <swiper-slide>
-          <div class="carousel-image">
-            <img src="./assets/media/boita_img1.jpg" />
-            <div class="overlay"></div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="carousel-image">
-            <img src="./assets/media/boita_img2.jpg" />
-            <div class="overlay"></div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="carousel-image">
-            <img src="./assets/media/boita_img3.jpg" />
-            <div class="overlay"></div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="carousel-image">
-            <img src="./assets/media/boita_img4.jpg" />
-            <div class="overlay"></div>
-          </div>
-        </swiper-slide>
-      </swiper-container>
-      
-      <div class="col-8 col-md-9 carousel-caption margincarousel2">
+      <div class="swiper-container mySwiper" style="width: 100%; height: 75vh;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="carousel-image">
+                    <img src="./assets/media/boita_img1.jpg" alt="Immagine 1" />
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="carousel-image">
+                    <img src="./assets/media/boita_img2.jpg" alt="Immagine 2" />
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="carousel-image">
+                    <img src="./assets/media/boita_img3.jpg" alt="Immagine 3" />
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="carousel-image">
+                    <img src="./assets/media/boita_img4.jpg" alt="Immagine 4" />
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination "></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <div class="col-9 col-md-9 carousel-caption margincarousel2">
         <h1 class="mt-5">BOITA FUORISERIE</h1>
         <p>
-          Benvenuti sul sito di Boita Fuoriserie, l'azienda dedicata all'arte
-          del restauro e alla preservazione dell'eleganza del passato, unendo
-          la tradizione con la tecnologia moderna. La nostra missione è quella
-          di garantire che ogni progetto che intraprendiamo sia eseguito con
-          la massima precisione e rispetto per l'autenticità del veicolo,
-          utilizzando tecniche moderne per migliorare la durabilità e la
-          qualità delle nostre realizzazioni.
+            Benvenuti sul sito di Boita Fuoriserie, l'azienda dedicata all'arte
+            del restauro e alla preservazione dell'eleganza del passato, unendo
+            la tradizione con la tecnologia moderna. La nostra missione è quella
+            di garantire che ogni progetto che intraprendiamo sia eseguito con
+            la massima precisione e rispetto per l'autenticità del veicolo,
+            utilizzando tecniche moderne per migliorare la durabilità e la
+            qualità delle nostre realizzazioni.
         </p>
-        
-      </div>
-      <p class="mb-3" id="chisiamo"></p>
     </div>
+    <p class="mb-3" id="chisiamo"></p>
     
 
     <!--STORIA AZIENDALE-->
@@ -200,11 +192,11 @@
         />
       </div>
     </div>
-    <div  id="visionemissione"></div>
+    <div class="m-3 p-3" id="visionemissione"></div>
     
     <!--VISIONE & MISSIONE-->
 
-    <div class="container mt-5 oswald-front-welcome">
+    <div class="container mt-5 oswald-front-welcome pWelcome">
       <div class="row">
         <div class="col-12 col-md-6 col-lg-6">
           <img
@@ -246,12 +238,12 @@
             alt="foto progetto automobilistico"
             />
         </div>
-        
+        <div id="filosofia"></div>
       </div>
 
       <!--FILOSOFIA-->
 
-      <div class="row mt-3"id="filosofia">
+      <div class="row mt-3">
         <div class="col-12 col-md-6 col-lg-6">
           <img
             src="./assets/media/boita_img6.png"
@@ -278,9 +270,9 @@
 
     <!--FOOTER-->
 
-    <footer class="footer mt-5">
+    <footer class="footer mt-5 roboto-serif-footer">
       <div class="container">
-        <div class="footer-content roboto-serif-footer">
+        <div class="footer-content ">
           <div class="footer-logo">
             <img
               src="assets/media/Boita_PNG_BIANCO.png"
@@ -318,18 +310,16 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>© 2024 Boita Fuoriserie S.R.L. All rights reserved.</p>
+          <p class="">© 2024 Boita Fuoriserie S.R.L. All rights reserved.</p>
         </div>
       </div>
     </footer>
 
     <!-- Collegamento a Bootstrap JS e dipendenze -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Collegamento al file JavaScript personalizzato -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/style/js/script.js"></script>
   </body>
 </html>
