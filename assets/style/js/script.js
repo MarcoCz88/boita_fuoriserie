@@ -9,36 +9,49 @@ let swiper; // Definisci swiper all'esterno
             }
         });
     
-        // Inizializzare Swiper
-        swiper = new Swiper('.swiper-container', { // Assegna a swiper qui
-            direction: 'horizontal',
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            autoplay: {
-                delay: 6000,
-                disableOnInteraction: false,
-            },
-            effect: 'fade',
+            // Inizializzare Swiper
+            swiper = new Swiper('.swiper-container', {
+                direction: 'horizontal',
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                effect: 'fade',
+            });
+        
+            // Aggiungere evento per il cambio slide
+            swiper.on('slideChange', function () {
+                const activeSlide = swiper.slides[swiper.activeIndex];
+                activeSlide.blur(); // Rimuove il focus dall'elemento attivo
+            });
+        
+            // Disabilitare autoplay durante lo scroll
+            let isScrolling;
+            window.addEventListener('scroll', function() {
+                window.clearTimeout(isScrolling);
+                swiper.autoplay.stop();
+        
+                isScrolling = setTimeout(function() {
+                    swiper.autoplay.start();
+                }, 100);
+            });
+        
+            // Prevenire scroll quando si usa il carosello
+            const swiperContainer = document.querySelector('.swiper-container');
+            swiperContainer.addEventListener('wheel', function (event) {
+                event.preventDefault(); // Previene il comportamento di scroll
+            }, { passive: false });
         });
-    });
-    
-    // Disabilitare autoplay durante lo scroll
-    let isScrolling;
-    window.addEventListener('scroll', function() {
-        window.clearTimeout(isScrolling);
-        swiper.autoplay.stop();
-    
-        isScrolling = setTimeout(function() {
-            swiper.autoplay.start();
-        }, 100);
-    });
+        
   //SERVIZI
   
   document.querySelectorAll('.show-more-btn').forEach(button => {
