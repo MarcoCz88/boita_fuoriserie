@@ -6,12 +6,14 @@
   }
 .more-content {
     display: none;
+    font-size: 16px;
 }
 
 .show-more-btn {
     cursor: pointer;
     color: rgb(13, 13, 14);
     text-decoration: underline;
+    font-size: 16px;
 }
 .show-more-btn:hover{
     color: rgb(78, 78, 77);
@@ -20,7 +22,9 @@
     display: flex;
     flex-direction: column;
     height:auto;
-}
+    border-radius: 12px !important;
+    overflow: hidden;
+} 
 .card-body {
     flex: 1;
 }

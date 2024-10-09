@@ -62,13 +62,33 @@ h2 {
     margin-top: 5%;
   }
 }
-.imgVisione {
-  max-width: 100%; 
-  height: auto; 
-  width: 100%; 
+.imgChiSiamo2 {
+  background-image: url(/assets/media/boita_img5.jpg);
+  height: 80vh;
+  width: 97%; 
   display: block;
   margin: 0 auto;
   border-radius: 24px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Centra l'immagine */
+}
+
+@media (max-width: 768px) {
+  .imgChiSiamo2 {
+    min-height: 200px; /* Altezza minima per dispositivi mobili */
+    height: 50vh; /* Riduce l'altezza su dispositivi mobili */
+    background-size: cover; /* Mantiene l'immagine coperta */
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .imgVisione {
+    width: 97%;
+    height: 85vh;
+  }
 }
 .marginStoriaAziendale{
   margin-top: 30%;

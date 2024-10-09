@@ -8,10 +8,18 @@
     background-color: #343a40; /* Grigio scuro */
     padding: 20px 0;
     color: #ffffff; /* Bianco */
-    width: 100%;
+    width: 99vw; /* Assicura che il footer occupi tutta la larghezza della viewport */
+    margin: 0; /* Elimina eventuali margini */
+    position: relative; /* Assicura che il footer rimanga all'interno dei limiti della pagina */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .footer .container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0; /* Elimina margini */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +33,10 @@
     margin-bottom: 20px;
     flex-wrap: wrap;
     align-items: center; /* Centra verticalmente gli elementi */
+    padding: 0; /* Elimina padding */
+    margin: 0; /* Elimina margini */
 }
+
 
 .footer-logo img {
     height: 100%; /* Occupa l'intera altezza del footer */
