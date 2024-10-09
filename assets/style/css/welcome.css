@@ -4,7 +4,7 @@
   font-style: normal;
 }
 .textCustom {
-  font-size: 1.4rem; /* Puoi regolare la dimensione secondo le tue necessità */
+  font-size: 1.4rem; 
 }
 a {
   color: #fff;
@@ -71,14 +71,14 @@ h2 {
   border-radius: 24px !important;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; /* Centra l'immagine */
+  background-position: center;
 }
 
 @media (max-width: 768px) {
   .imgChiSiamo2 {
-    min-height: 200px; /* Altezza minima per dispositivi mobili */
-    height: 50vh; /* Riduce l'altezza su dispositivi mobili */
-    background-size: cover; /* Mantiene l'immagine coperta */
+    min-height: 200px; 
+    height: 50vh; 
+    background-size: cover;
     width: 100%;
   }
 }

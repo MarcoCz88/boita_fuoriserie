@@ -5,12 +5,12 @@
 }
 
 .footer {
-    background-color: #343a40; /* Grigio scuro */
+    background-color: #343a40; 
     padding: 20px 0;
-    color: #ffffff; /* Bianco */
-    width: 99vw; /* Assicura che il footer occupi tutta la larghezza della viewport */
-    margin: 0; /* Elimina eventuali margini */
-    position: relative; /* Assicura che il footer rimanga all'interno dei limiti della pagina */
+    color: #ffffff; 
+    width: 99vw; 
+    margin: 0; 
+    position: relative; 
     left: 50%;
     transform: translateX(-50%);
 }
@@ -18,7 +18,7 @@
 .footer .container {
     max-width: 100%;
     padding: 0;
-    margin: 0; /* Elimina margini */
+    margin: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -32,15 +32,14 @@
     max-width: 1200px;
     margin-bottom: 20px;
     flex-wrap: wrap;
-    align-items: center; /* Centra verticalmente gli elementi */
-    padding: 0; /* Elimina padding */
-    margin: 0; /* Elimina margini */
+    align-items: center; 
+    padding: 0; 
+    margin: 0;
 }
 
-
 .footer-logo img {
-    height: 100%; /* Occupa l'intera altezza del footer */
-    max-height: 180px; /* Limita l'altezza massima */
+    height: 100%;
+    max-height: 180px;
 }
 
 .footer-links ul {
@@ -53,12 +52,12 @@
 }
 
 .footer-links li {
-    width: auto; /* Rimuove la larghezza fissa */
+    width: auto;
     text-align: center;
 }
 
 .footer-links a {
-    color: #ffffff; /* Bianco */
+    color: #ffffff;
     text-decoration: none;
     font-size: 16px;
 }
@@ -72,27 +71,26 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    flex-direction: row; /* Dispone le icone in riga */
-    align-items: center; /* Centra le icone */
+    flex-direction: row;
+    align-items: center; /
 }
 
 .footer-social a {
-    color: #ffffff; /* Bianco */
+    color: #ffffff; 
     text-decoration: none;
-    margin: 10px; /* Aggiunge spazio tra le icone */
-    font-size: 2rem; /* Aumenta la dimensione delle icone */
+    margin: 10px; 
+    font-size: 2rem; 
 }
 
 .footer-social a:hover {
-    color: #d3d3d3; /* Colore delle icone al passaggio del mouse */
+    color: #d3d3d3; 
 }
 
 .footer-bottom {
     text-align: center;
-    color: #ffffff; /* Bianco */
+    color: #ffffff; 
 }
 
-/* Media Queries per dispositivi mobili */
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
@@ -106,7 +104,7 @@
     }
 
     .footer-links li {
-        width: 45%; /* Due colonne affiancate */
+        width: 45%; 
         text-align: center;
     }
 

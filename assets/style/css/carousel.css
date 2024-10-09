@@ -70,9 +70,9 @@
   height: 90vh;
   color: white;
   text-align: center;
-  padding: 0 20px; /* Aggiungi padding per evitare che il testo tocchi i bordi */
-  box-sizing: border-box; /* Assicura che il padding sia incluso nella larghezza totale */
-  overflow: hidden; /* Assicura che il contenuto non esca dai bordi */
+  padding: 0 20px; 
+  box-sizing: border-box; 
+  overflow: hidden; 
 }
 
 .margincarousel {
@@ -98,17 +98,17 @@
 
 .swiper-container .swiper-button-next,
 .swiper-container .swiper-button-prev {
-  color: rgb(38, 38, 38) !important; /* Forza il colore dei bottoni di navigazione */
+  color: rgb(38, 38, 38) !important; 
 }
 
 .swiper-container .swiper-pagination-bullet {
-  background-color: rgb(38, 38, 38) !important; /* Forza il colore dei bottoni di paginazione */
+  background-color: rgb(38, 38, 38) !important;
 }
 .carousel-container .carousel-image img {
   border-bottom-left-radius: 24px !important;
   border-bottom-right-radius: 24px !important;
 }
 .carousel-container {
-  margin-left: 16px; /* Puoi aumentare o diminuire questo valore */
-  margin-right: 16px; /* Puoi aumentare o diminuire questo valore */
+  margin-left: 16px;
+  margin-right: 16px; 
 }

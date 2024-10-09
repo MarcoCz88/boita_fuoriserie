@@ -31,12 +31,12 @@
     display: block;
 }
 .card-container .card {
-    border-radius: 16px; /* Arrotonda tutti gli angoli */
-    overflow: hidden; /* Assicura che il contenuto non esca dai bordi arrotondati */
+    border-radius: 16px;
+    overflow: hidden; 
 }
 .card img {
-    border-top-right-radius: 0px; /* Arrotonda l'angolo in alto a sinistra */
-    border-bottom-right-radius: 0px; /* Arrotonda l'angolo in basso a sinistra */
+    border-top-right-radius: 0px; 
+    border-bottom-right-radius: 0px; 
 }
 
 .position-relative {
@@ -49,8 +49,53 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to left, rgba(252, 252, 252, 0.423), rgba(255, 254, 254, 0)); /* Gradiente dall'alto a destra sfumando verso sinistra */
-    border-top-left-radius: 15px; /* Arrotonda l'angolo in alto a sinistra */
-    border-bottom-left-radius: 15px; /* Arrotonda l'angolo in basso a sinistra */
-    pointer-events: none; /* Assicura che l'overlay non interferisca con l'interazione dell'utente */
+    background: linear-gradient(to left, rgba(252, 252, 252, 0.423), rgba(255, 254, 254, 0));
+    border-top-left-radius: 15px; 
+    border-bottom-left-radius: 15px; 
+    pointer-events: none; 
+}
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-control-prev {
+    left: -25px;
+}
+
+.carousel-control-next {
+    right: -25px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    background-size: 100%, 100%;
+    background-image: none;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 20px;
+    color: white;
+}
+
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 20px;
+    color: white;
 }

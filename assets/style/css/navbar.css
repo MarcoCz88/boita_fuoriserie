@@ -58,8 +58,8 @@
     transform: translateX(0);
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente i contenuti */
-    align-items: center; /* Centra orizzontalmente i contenuti */
+    justify-content: center; 
+    align-items: center;
     position: fixed;
     top: 0;
     right: 0;
