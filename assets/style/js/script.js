@@ -57,15 +57,23 @@ $(document).ready(function() {
 document.querySelectorAll('.show-more-btn').forEach(button => {
     button.addEventListener('click', () => {
         const moreContent = button.previousElementSibling;
-        if (moreContent.style.display === 'none' || moreContent.style.display === '') {
-            moreContent.style.display = 'block';
-            button.textContent = 'Mostra di meno';
-        } else {
-            moreContent.style.display = 'none';
-            button.textContent = 'Mostra di più';
-        }
+
+        // Chiude tutte le altre sezioni
+        document.querySelectorAll('.show-more-content').forEach(content => {
+            if (content !== moreContent && content.classList.contains('expanded')) {
+                content.classList.remove('expanded');
+                content.nextElementSibling.textContent = 'Mostra di più';
+            }
+        });
+
+        // Alterna la sezione corrente
+        moreContent.classList.toggle('expanded');
+        button.textContent = moreContent.classList.contains('expanded') ? 'Mostra di meno' : 'Mostra di più';
     });
 });
+
+
+
 
 // PROGETTI
 document.addEventListener('DOMContentLoaded', function() {
@@ -95,6 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
     // Aggiungi logica per le frecce delle card
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
@@ -103,6 +112,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function showCard(index) {
         cards.forEach((card, i) => {
             card.classList.toggle('active', i === index);
+        });
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
         });
     }
 
