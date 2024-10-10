@@ -1,133 +1,75 @@
-let swiper; // Definisci swiper all'esterno
-
 $(document).ready(function() {
+    // Chiudi la navbar se si clicca al di fuori
     $(document).click(function(event) {
-        var clickover = $(event.target);
-        var _opened = $(".navbar-collapse").hasClass("show");
-        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+        if ($(".navbar-collapse").hasClass("show") && !$(event.target).closest(".navbar-toggler").length) {
             $(".navbar-toggler").click();
         }
     });
 
-    // Inizializzare Swiper
-    swiper = new Swiper('.swiper-container', {
-        direction: 'horizontal',
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
-        effect: 'fade',
-    });
-
-    // Aggiungere evento per il cambio slide
-    swiper.on('slideChange', function () {
-        const activeSlide = swiper.slides[swiper.activeIndex];
-        activeSlide.blur(); // Rimuove il focus dall'elemento attivo
-    });
-
-    // Disabilitare autoplay durante lo scroll
-    let isScrolling;
-    window.addEventListener('scroll', function() {
-        window.clearTimeout(isScrolling);
-        swiper.autoplay.stop();
-
-        isScrolling = setTimeout(function() {
-            swiper.autoplay.start();
-        }, 100);
-    });
-
-    // Prevenire scroll quando si usa il carosello
-    const swiperContainer = document.querySelector('.swiper-container');
-    swiperContainer.addEventListener('wheel', function (event) {
-        event.preventDefault(); // Previene il comportamento di scroll
-    }, { passive: false });
-
-});
-
-// SERVIZI
-document.querySelectorAll('.show-more-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const moreContent = button.previousElementSibling;
-
-        // Chiude tutte le altre sezioni
-        document.querySelectorAll('.show-more-content').forEach(content => {
-            if (content !== moreContent && content.classList.contains('expanded')) {
-                content.classList.remove('expanded');
-                content.nextElementSibling.textContent = 'Mostra di più';
-            }
-        });
-
-        // Alterna la sezione corrente
-        moreContent.classList.toggle('expanded');
-        button.textContent = moreContent.classList.contains('expanded') ? 'Mostra di meno' : 'Mostra di più';
-    });
-});
-
-
-
-
-// PROGETTI
-document.addEventListener('DOMContentLoaded', function() {
-    const dots = document.querySelectorAll('.dot');
-    const cards = document.querySelectorAll('.card-container');
-    cards[0].classList.add('active');
-    dots[0].classList.add('active');
-
-    dots.forEach(dot => {
-        dot.addEventListener('click', function() {
-            const target = this.getAttribute('data-target');
-
-            cards.forEach(card => {
-                if (card.id === target) {
-                    card.classList.add('active');
-                } else {
-                    card.classList.remove('active');
-                }
-            });
-
-            dots.forEach(d => {
-                if (d === this) {
-                    d.classList.add('active');
-                } else {
-                    d.classList.remove('active');
-                }
-            });
-        });
-    });
-
-    // Aggiungi logica per le frecce delle card
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    let currentIndex = 0;
-
-    function showCard(index) {
-        cards.forEach((card, i) => {
-            card.classList.toggle('active', i === index);
-        });
-        dots.forEach((dot, i) => {
-            dot.classList.toggle('active', i === index);
+    // Inizializzare Swiper se presente
+    if ($('.swiper-container').length) {
+        swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
         });
     }
 
-    prevBtn.addEventListener('click', function() {
-        currentIndex = (currentIndex === 0) ? cards.length - 1 : currentIndex - 1;
-        showCard(currentIndex);
+    // SERVIZI
+    $('.show-more-btn').click(function() {
+        const moreContent = $(this).prev();
+        $('.show-more-content').not(moreContent).removeClass('expanded').next().text('Mostra di più');
+        moreContent.toggleClass('expanded');
+        $(this).text(moreContent.hasClass('expanded') ? 'Mostra di meno' : 'Mostra di più');
     });
 
-    nextBtn.addEventListener('click', function() {
-        currentIndex = (currentIndex === cards.length - 1) ? 0 : currentIndex + 1;
-        showCard(currentIndex);
-    });
+    // PROGETTI
+    const dots = $('.dot');
+    const cards = $('.card-container');
+    if (cards.length) {
+        cards.first().addClass('active');
+        dots.first().addClass('active');
 
-    // Initialize the first card as active
-    showCard(currentIndex);
+        dots.click(function() {
+            const target = $(this).data('target');
+            cards.removeClass('active').filter(`#${target}`).addClass('active');
+            dots.removeClass('active').filter(this).addClass('active');
+        });
+
+        // Logica per le frecce delle card
+        const prevBtn = $('#prevBtn');
+        const nextBtn = $('#nextBtn');
+        if (prevBtn.length && nextBtn.length) {
+            let currentIndex = 0;
+
+            function showCard(index) {
+                cards.removeClass('active').eq(index).addClass('active');
+                dots.removeClass('active').eq(index).addClass('active');
+            }
+
+            prevBtn.click(() => {
+                currentIndex = (currentIndex === 0) ? cards.length - 1 : currentIndex - 1;
+                showCard(currentIndex);
+            });
+
+            nextBtn.click(() => {
+                currentIndex = (currentIndex === cards.length - 1) ? 0 : currentIndex + 1;
+                showCard(currentIndex);
+            });
+
+            showCard(currentIndex);
+        }
+    }
 });
