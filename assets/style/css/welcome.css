@@ -63,7 +63,7 @@ h2 {
   }
 }
 .imgChiSiamo2 {
-  background-image: url(/assets/media/boita_img5.jpg);
+  background-image: url(/assets/media/boita_img9.jpeg);
   height: 80vh;
   width: 97%; 
   display: block;
@@ -77,7 +77,7 @@ h2 {
 @media (max-width: 768px) {
   .imgChiSiamo2 {
     min-height: 200px; 
-    height: 50vh; 
+    height: 20vh; 
     background-size: cover;
     width: 100%;
   }

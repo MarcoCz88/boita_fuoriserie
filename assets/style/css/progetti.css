@@ -1,15 +1,14 @@
 .oswald-front-progetti {
     font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 300;
-    font-style: normal;
   }
-.dots {
+  
+  .dots {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.dot {
+  }
+  
+  .dot {
     height: 25px;
     width: 25px;
     background-color: #696666;
@@ -17,38 +16,42 @@
     display: inline-block;
     margin: 0 5px;
     cursor: pointer;
-}
-
-.dot.active {
+  }
+  
+  .dot.active {
     background-color: rgb(14, 13, 13);
-}
-
-.card-container {
+  }
+  
+  .card-container {
     display: none;
     height: 45vh;
-}
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .card-container {
-        height: 60vh;
+      height: 60vh;
     }
-}
-.card-container.active {
+  }
+  
+  .card-container.active {
     display: block;
-}
-.card-container .card {
+  }
+  
+  .card-container .card {
     border-radius: 16px;
     overflow: hidden; 
-}
-.card img {
-    border-top-right-radius: 0px; 
-    border-bottom-right-radius: 0px; 
-}
-
-.position-relative {
+  }
+  
+  .card img {
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+  }
+  
+  .position-relative {
     position: relative;
-}
-
-.overlay2 {
+  }
+  
+  .overlay2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -58,18 +61,20 @@
     border-top-left-radius: 15px; 
     border-bottom-left-radius: 15px; 
     pointer-events: none; 
-}
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .overlay2 {
-        background: linear-gradient(to top, rgb(252, 252, 252), rgba(255, 254, 254, 0));
+      background: linear-gradient(to top, rgb(252, 252, 252), rgba(255, 254, 254, 0));
     }
-}
-.projects-carousel-control-prev,
-.projects-carousel-control-next {
+  }
+  
+  .projects-carousel-control-prev,
+  .projects-carousel-control-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: transparent; /* Cambiato da rgba(0, 0, 0, 0) a trasparente */
+    background-color: transparent;
     border: none;
     width: 50px;
     height: 50px;
@@ -79,53 +84,59 @@
     align-items: center;
     cursor: pointer;
     z-index: 10;
-    outline: none; /* Rimuove il bordo di messa a fuoco */
-    box-shadow: none; /* Rimuove eventuali ombre */
- 
-}
-
-.projects-carousel-control-prev {
+  }
+  
+  .projects-carousel-control-prev {
     left: -45px;
     top: 130px;
-}
-
-.projects-carousel-control-next {
+  }
+  
+  .projects-carousel-control-next {
     right: -35px;
     top: 130px;
-}
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .projects-carousel-control-prev {
-        left: 5px;
-        top:220px;
+      left: 5px;
+      top: 220px;
     }
     
     .projects-carousel-control-next {
-        right: 10px;
-        top:220px;
+      right: 10px;
+      top: 220px;
     }
-}
-
-.projects-carousel-control-prev-icon,
-.projects-carousel-control-next-icon {
+  }
+  
+  .projects-carousel-control-prev-icon,
+  .projects-carousel-control-next-icon {
     width: 20px;
     height: 20px;
-    background-size: 100%, 100%;
+    background-size: 100%;
     background-image: none;
-}
-
-.projects-carousel-control-prev-icon:after {
+  }
+  
+  .projects-carousel-control-prev-icon:after {
     content: '<';
     font-size: 80px;
     color: rgba(0, 0, 0, 0.802);
-    
-}
-
-.projects-carousel-control-next-icon:after {
+  }
+  
+  .projects-carousel-control-next-icon:after {
     content: '>';
     font-size: 80px;
     color: rgba(0, 0, 0, 0.802);
-}
-button.carousel-control-prev:focus,
-button.carousel-control-next:focus {
+  }
+  
+  button.carousel-control-prev:focus,
+  button.carousel-control-next:focus {
     outline: none; 
+  }
+  .mtProgetti{
+    margin-top: 25%;
 }
+@media (min-width: 992px) {
+    .mtProgetti{
+        margin-top: 10%;
+    }
+}  

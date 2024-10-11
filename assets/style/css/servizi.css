@@ -50,3 +50,11 @@
 .CustomRounded {
     border-radius: 10%;
 }
+.mtServizi{
+    margin-top: 25%;
+}
+@media (min-width: 992px) {
+    .mtServizi{
+        margin-top: 10%;
+    }
+}

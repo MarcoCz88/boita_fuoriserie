@@ -1,12 +1,25 @@
 $(document).ready(function() {
-    // Chiudi la navbar se si clicca al di fuori
+
+    //NAVBAR
     $(document).click(function(event) {
-        if ($(".navbar-collapse").hasClass("show") && !$(event.target).closest(".navbar-toggler").length) {
+        if ($(".navbar-collapse").hasClass("show") && !$(event.target).closest(".navbar").length) {
             $(".navbar-toggler").click();
         }
     });
 
-    // Inizializzare Swiper se presente
+    
+    $('.navbar-nav .nav-link').click(function(event) {
+        if ($(".navbar-collapse").hasClass("show") && !$(event.target).closest('.dropdown').length) {
+            $(".navbar-toggler").click(); 
+        }
+    });
+
+    
+    $('.dropdown-menu a').click(function() {
+        $('.navbar-collapse').collapse('hide');
+    });
+
+   //SWIPER
     if ($('.swiper-container').length) {
         swiper = new Swiper('.swiper-container', {
             direction: 'horizontal',
@@ -20,7 +33,7 @@ $(document).ready(function() {
                 prevEl: '.swiper-button-prev',
             },
             autoplay: {
-                delay: 4000,
+                delay: 5000,
                 disableOnInteraction: false,
             },
             effect: 'fade',
