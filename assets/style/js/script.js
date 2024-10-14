@@ -86,9 +86,6 @@ $(document).ready(function() {
         }
     }
 });
-<<<<<<< HEAD
 document.getElementById('contactButton').addEventListener('click', function() {
     window.location.href = './contatti.html';
 });
-=======
->>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
