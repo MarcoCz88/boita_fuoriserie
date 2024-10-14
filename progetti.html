@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boita Fuoriserie S.R.L.</title>
+    <!--FAVICON-->
+    <link rel="icon" href="./assets/media/favicon-boita.png" type="image/png">
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Collegamento a Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Collegamento al file CSS personalizzato -->
+    <link rel="stylesheet" href="./assets/style/css/style.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbarCustom navbar-expand-lg fixed-top">
+      <div class="container">
+        <div class="col-4 navbar-brand">
+          <a href="index.html">
+            <img
+              class="logoCustom"
+              src="./assets/media/Boita_PNG_NERO.png"
+              alt="Logo Boita Fuoriclasse S.R.L."
+            />
+          </a>
+        </div>
+        <button
+          class="navbar-toggler btnCustom"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fas fa-bars"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav oswald-front-navbar align-items-center fs-5 mx-auto"
+          >
+            <li class="nav-item">
+              <img
+                class="logoCustom2 mt-2"
+                src="./assets/media/Boita_PNG_NERO.png"
+                alt="Logo Boita Fuoriclasse S.R.L."
+              />
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="chiSiamoDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                CHI SIAMO
+              </a>
+              <div class="dropdown-menu" aria-labelledby="chiSiamoDropdown">
+                <a class="dropdown-item" href="/#chisiamo">STORIA AZIENDALE</a>
+                <a class="dropdown-item" href="/#visionemissione"
+                  >MISSIONE & VISIONE</a
+                >
+                <a class="dropdown-item" href="/#filosofia">FILOSOFIA</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servizi.html">SERVIZI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="progetti.html">PROGETTI</a>
+            </li>
+          </ul>
+          <button class="btn btn-dark" id="contactButton">CONTATTACI</button>
+        </div>
+      </div>
+    </nav>
+
+    <!--PROGETTI-->
+
+    <div class="container mt-5 oswald-front-progetti">
+
+        <div class="row mt-5 justify-content-center align-items-center textSizeProget">
+                <div class="col-12 mtProgetti">
+                  <h1 class="text-center">PROGETTI</h1>
+                </div>
+                <p class="col-9 text-center mt-2" style="font-size: 24px;">Nel corso degli anni,<strong>Boita Fuoriserie</strong> ha avuto l'onore di lavorare su alcuni dei modelli più iconici della storia automobilistica. Tra i nostri progetti più prestigiosi:</p>
+        </div>
+        
+        <div class="row position-relative my-3" >
+           <a class="projects-carousel-control-prev" id="prevBtn" type="button">
+              <span class="projects-carousel-control-prev-icon" aria-hidden="true"></span>
+           </a>
+           <a class="projects-carousel-control-next" id="nextBtn" type="button">
+              <span class="projects-carousel-control-next-icon" aria-hidden="true"></span>
+           </a>
+          
+           <div class=" card-container" id="projects-card1">
+              <div class="card2">
+                  <div class="row g-0 justify-content-center align-items-center">
+                      <div class="col-md-6 position-relative">
+                          <img src="assets/media/lamborghini_miura.jpeg" class="img-fluid" alt="Boita Fuoriserie Lamborghini Miura" loading="lazy">
+                          <div class="overlay2"></div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="card-body2 text-center">
+                              <h3 class="card-title2">Lamborghini Miura</h3>
+                              <p class="card-text2">La costruzione e restauro della scocca di questo modello leggendario, rispettando i dettagli originali e migliorando la struttura con tecniche moderne.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>  
+           </div>
+        
+           <div class=" card-container" id="projects-card2">
+            <div class="card2 ">
+                <div class="row g-0 justify-content-center align-items-center">
+                    <div class="col-md-6 position-relative">
+                        <img src="assets/media/Mercedes_300.jpeg" class="img-fluid" alt="Boita Fuoriserie Mercedes 300 SL Coupé e Ali di Gabbiano" loading="lazy">
+                        <div class="overlay2"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body2 text-center">
+                            <h4 class="card-title2">Mercedes 300 SL Coupé e Ali di Gabbiano</h4>
+                            <p class="card-text2">Lavorazioni su scocche e sotto scocche, con una cura particolare nella preservazione dell'eleganza e delle linee originali.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        
+           <div class=" card-container" id="projects-card3">
+            <div class="card2 ">
+                <div class="row g-0 justify-content-center align-items-center">
+                    <div class="col-md-6 position-relative">
+                        <img src="assets/media/Ferrari_275.jpg" class="img-fluid" alt="Boita Fuoriserie Ferrari 275 GTB" loading="lazy">
+                        <div class="overlay2"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body2 text-center">
+                            <h4 class="card-title2">Ferrari 275 GTB</h4>
+                            <p class="card-text2">Realizzazione di strutture di supporto e finiture dettagliate, con l'utilizzo di materiali e tecnologie d'avanguardia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        
+           <div class=" card-container" id="projects-card4">
+            <div class="card2 ">
+                <div class="row g-0 justify-content-center align-items-center">
+                    <div class="col-md-6 position-relative">
+                        <img src="assets/media/BMW_507.jpg" class="img-fluid" alt="Boita Fuoriserie BMW 507" loading="lazy">
+                        <div class="overlay2"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body2 text-center">
+                            <h4 class="card-title2">BMW 507</h4>
+                            <p class="card-text2">Costruzione di componenti<br> critici della scocca, mantenendo l'integrità del design <br>originale.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="dots">
+              <span class="dot" data-target="projects-card1"></span>
+              <span class="dot" data-target="projects-card2"></span>
+              <span class="dot" data-target="projects-card3"></span>
+              <span class="dot" data-target="projects-card4"></span>
+          </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+     
+    <footer class="footer mt-5 roboto-serif-footer">
+      <div class="container">
+        <div class="footer-content ">
+          <div class="footer-logo">
+            <a href="./">
+              <img
+              src="assets/media/Boita_PNG_BIANCO.png"
+              alt="Logo Boita Fuoriserie"
+            />
+            </a>
+          </div>
+          <div class="footer-links">
+            <ul>
+                <li><a href="./#chisiamo">Chi Siamo</a></li>
+                <li><a href="./#visionemissione">Visione&Missione</a></li>   
+                <li><a href="./#filosofia">Filosofia</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="progetti.html">Progetti</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+          </div>
+          <div class="social-section text-center mt-4">
+            <h4 class="bebas-neue-regular">Seguici su</h4>
+            <ul class="list-inline mt-3 fs-1 footer-social">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/boitafuoriserie/"
+                  target="_blank"
+                  ><i class="fab fa-facebook-square"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.instagram.com/boitafuoriserie/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="">© 2024 Boita Fuoriserie S.R.L. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Collegamento a Bootstrap JS e dipendenze -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Collegamento al file JavaScript personalizzato -->
+    <script src="./assets/style/js/script.js"></script>
+  </body>
+</html>

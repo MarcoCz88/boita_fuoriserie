@@ -1,0 +1,117 @@
+.oswald-front-welcome {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.textCustom {
+  font-size: 24px; 
+}
+a {
+  color: #fff;
+  text-decoration: none !important;
+  transform: 0.3s;
+  transition: 0.3s;
+}
+a:hover {
+  transform: 0.3s;
+  transition: 0.3s;
+  color: #51514f !important;
+  opacity: 0.7;
+  text-decoration: none !important;
+}
+.imgChiSiamo {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+ 
+}
+@media (min-width: 992px) {
+  .imgChiSiamo {
+    display: flex;
+    align-items: center;
+    margin-left: 36%;
+    margin-top: 15%;
+  }
+}
+img {
+  border-radius: 8px;
+  width: 100%;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-style: normal;
+}
+.pWelcome {
+  font-size: 24px;
+}
+
+
+.filoImg{
+  height: 300px;
+  position: relative;
+}
+.imgCustom2,
+.img3Custom {
+    height: 400px;
+    position: relative;
+}
+
+.imgCustom2 img,
+.img3Custom img,
+.filoImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@media (min-width: 992px) {
+  .filoImg{
+    margin-top: 20px;
+    height: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .visioneMarginTop {
+    margin-top: 5%;
+  }
+}
+.imgChiSiamo2 {
+  background-image: url(/assets/media/boita_img9.jpeg);
+  height: 80vh;
+  width: 97%; 
+  display: block;
+  margin: auto;
+  border-radius: 24px ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .imgChiSiamo2 {
+    min-height: 200px; 
+    height: 20vh; 
+    background-size: cover;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .imgVisione {
+    width: 97%;
+    height: 85vh;
+  }
+}
+.marginStoriaAziendale{
+  margin-top: 30%;
+}
+@media (min-width: 992px) {
+  .marginStoriaAziendale{
+    margin-top: 2%;
+  }
+}

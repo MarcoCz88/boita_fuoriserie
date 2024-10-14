@@ -1,0 +1,136 @@
+.oswald-front-carousel {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.carousel-caption h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .carousel-caption h1 {
+    font-size: 80px;
+  }
+}
+
+.carousel-caption p {
+  font-size: 20px;
+}
+
+@media (min-width: 992px) {
+  .carousel-caption p {
+    font-size: 30px;
+  }
+}
+
+.swiper {
+  width: 600px;
+  height: 200px;
+}
+
+.swiper-slide {
+  background-color: grey;
+  height: 80vh !important;
+  text-align: center;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.carousel-image img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 115%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.284), rgb(0, 0, 0));
+}
+
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  color: white;
+  text-align: center;
+  padding: 0 20px; 
+  box-sizing: border-box; 
+  overflow: hidden; 
+}
+
+.margincarousel {
+  margin-top: 16%;
+  
+}
+
+@media (min-width: 992px) {
+  .margincarousel {
+    margin-top: 4%;
+  }
+}
+
+.margincarousel2 {
+  margin-top: 14%;
+}
+
+@media (min-width: 992px) {
+  .margincarousel2 {
+    margin-top: 10%;
+  }
+}
+
+.swiper-container .swiper-button-next,
+.swiper-container .swiper-button-prev {
+  color: rgb(181, 181, 181) !important; 
+}
+
+.swiper-container .swiper-pagination-bullet {
+  background-color: rgb(38, 38, 38) !important;
+}
+.carousel-container .carousel-image img {
+  border-bottom-left-radius: 24px ;
+  border-bottom-right-radius: 24px ;
+}
+.carousel-container {
+  margin-left: 16px;
+  margin-right: 16px; 
+}
+.carousel-logo2{
+  height: 100vh;
+  width: auto;
+  margin-bottom:-700px;
+  margin-top: -50px;
+  opacity: 0.2;
+}
+@media (min-width: 992px) {
+  .carousel-logo2{
+    height: 50vh;
+    width: auto;
+    margin-bottom: -150px;
+    margin-top: -200px;
+    opacity: 0.5;
+  }
+}
+.swiper-pagination {
+  bottom: 30px !important;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boita Fuoriserie S.R.L.</title>
+    <!--FAVICON-->
+    <link rel="icon" href="./assets/media/favicon-boita.png" type="image/png" />
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Collegamento al file CSS personalizzato -->
+    <link rel="stylesheet" href="./assets/style/css/style.css" />
+    <!-- Collegamento a Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbarCustom navbar-expand-lg fixed-top">
+      <div class="container">
+        <div class="col-4 navbar-brand">
+          <a href="./">
+            <img
+              class="logoCustom"
+              src="./assets/media/Boita_PNG_NERO.png"
+              alt="Logo Boita Fuoriclasse S.R.L."
+            />
+          </a>
+        </div>
+        <button
+          class="navbar-toggler btnCustom"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fas fa-bars"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav oswald-front-navbar align-items-center fs-5 mx-auto"
+          >
+            <li class="nav-item">
+              <img
+                class="logoCustom2 mt-2"
+                src="./assets/media/Boita_PNG_NERO.png"
+                alt="Logo Boita Fuoriclasse S.R.L."
+              />
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="chiSiamoDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                CHI SIAMO
+              </a>
+              <div class="dropdown-menu" aria-labelledby="chiSiamoDropdown">
+                <a class="dropdown-item" href="/#chisiamo">STORIA AZIENDALE</a>
+                <a class="dropdown-item" href="/#visionemissione"
+                  >MISSIONE & VISIONE</a
+                >
+                <a class="dropdown-item" href="/#filosofia">FILOSOFIA</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servizi.html">SERVIZI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="progetti.html">PROGETTI</a>
+            </li>
+          </ul>
+          <button class="btn btn-dark" id="contactButton">CONTATTACI</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carosello -->
+
+    <div class="carousel-container oswald-front-carousel margincarousel pt-5">
+      <div
+        class="swiper-container mySwiper"
+        style="width: 100%; height: 80vh; overflow: hidden"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="carousel-image">
+              <img src="./assets/media/boita_img12.jpeg" alt="Boita Fuoriserie Carosello Immagine 1" loading="lazy" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-image">
+              <img src="./assets/media/boita_img8.jpeg" alt="Boita Fuoriserie Carosello Immagine 2"  loading="lazy"/>
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-image">
+              <img src="./assets/media/boita_img11.jpg" alt="Boita Fuoriserie Carosello Immagine 3"  loading="lazy"/>
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-image">
+              <img src="./assets/media/boita_img4.jpg" alt="Boita Fuoriserie Carosello Immagine 4" loading="lazy" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-image">
+              <img src="./assets/media/boita_img2.jpg" alt="Boita Fuoriserie Carosello Immagine 5"  loading="lazy"/>
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-image">
+              <img src="./assets/media/boita_img1.jpg" alt="Boita Fuoriserie Carosello Immagine 6"  loading="lazy"/>
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-image">
+              <img src="./assets/media/boita_img10.jpeg" alt="Boita Fuoriserie Carosello Immagine 7" loading="lazy" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-image">
+              <img src="./assets/media/boita_img3.jpg" alt="Boita Fuoriserie Carosello Immagine 8" loading="lazy" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next mr-1"></div>
+        <div class="swiper-button-prev ml-1"></div>
+      </div>
+    </div>
+    <div class="col-9 col-md-9 carousel-caption margincarousel2">
+      <img src="./assets/media/Boita_PNG_BIANCO.png" class="carousel-logo2" alt="Logo Boita Fuoriserie">
+      <h1 class="mt-5">Boita Fuoriserie</h1>
+      <p>
+        Benvenuti sul sito di Boita Fuoriserie, l'azienda dedicata all'arte del
+        restauro e alla preservazione dell'eleganza del passato, unendo la
+        tradizione con la tecnologia moderna. La nostra missione è quella di
+        garantire che ogni progetto che intraprendiamo sia eseguito con la
+        massima precisione e rispetto per l'autenticità del veicolo, utilizzando
+        tecniche moderne per migliorare la durabilità e la qualità delle nostre
+        realizzazioni.
+      </p>
+    </div>
+    <p class="mb-3" id="chisiamo"></p>
+
+    <!--STORIA AZIENDALE-->
+
+    <div class="container-fluid oswald-front-welcome marginStoriaAziendale">
+      <div class="row">
+        <div class="col-12 col-md-2 col-lg-2"></div>
+        <div class="col-12 col-md-12 col-lg-3 align-content-center">
+          <h2>BREVE STORIA AZIENDALE</h2>
+          <p class="textCustom">
+            <strong>Boita Fuoriserie</strong> è stata fondata da
+            <strong>Edoardo Garbo</strong> e <strong>Marco Cristofani</strong>,
+            due appassionati del restauro e della lavorazione della lamiera, con
+            una profonda conoscenza delle auto d'epoca e delle tecniche di
+            costruzione tradizionali. L'azienda nasce con l'obiettivo di
+            preservare l'aspetto classico e antico delle automobili storiche,
+            combinando le più recenti tecnologie per garantire una qualità
+            estrema e una durabilità nel tempo. Fondata su una visione di
+            <strong>rispetto per il passato e innovazione per il futuro</strong>,
+            Boita Fuoriserie si distingue per la sua capacità di riprodurre
+            con precisione dettagli storici, migliorando al contempo la
+            funzionalità e la longevità delle automobili.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4">
+          <img
+            class="imgChiSiamo"
+            src="./assets/media/boita_chisiamo.jpg"
+            alt="Boita Fuoriserie Chi Siamo "
+          />
+        </div>
+        <div class="col-12 col-md-3 col-lg-3"></div>
+      </div>
+    </div>
+    <div class="container-fluid mt-5">
+      <!--IMMAGINE CHI SIAMO-->
+
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-12 mt-4">
+          <div class="imgChiSiamo2"></div>
+        </div>
+      </div>
+
+      <!--VISIONE & MISSIONE-->
+      <div class="p-3" id="visionemissione"></div>
+      <div class="container mt-5 oswald-front-welcome pWelcome">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-6 imgCustom2">
+            <img
+              class=""
+              src="./assets/media/boita_img7.jpg"
+              alt="Boita Fuoriserie Visione"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-12 col-md-12 col-lg-6 align-content-center">
+            <h2 class="mt-4">VISIONE E MISSIONE</h2>
+            <p>
+              La visione di <strong>Boita Fuoriserie</strong> è quella di essere
+              un punto di riferimento nel restauro e nella costruzione di auto
+              d'epoca, unendo l'autenticità storica con le tecnologie moderne.
+              Il nostro obiettivo è creare un
+              <strong>equilibrio perfetto tra passato e futuro</strong> ,
+              preservando la bellezza e l'eleganza delle auto storiche e
+              migliorando la loro qualità attraverso innovazioni tecnologiche.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-12 col-md-12 col-lg-6 align-content-center">
+            <p>
+              <strong>Boita Fuoriserie</strong> si propone di preservare
+              l'aspetto classico e antico delle automobili storiche senza
+              snaturarne la storicità, utilizzando le tecnologie più avanzate
+              per garantire una
+              <strong>qualità estrema e una lunga durata nel tempo.</strong> La
+              nostra missione è realizzare scocche e sotto scocche, con
+              un'attenzione maniacale ai dettagli, offrendo un servizio di
+              altissimo livello che rispetti l'autenticità del veicolo
+              originale, migliorandone la funzionalità e la durabilità.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 img3Custom">
+            <img
+              class=""
+              src="./assets/media/BoitaImg5.jpg"
+              alt="Boita Fuoriserie missione"
+              loading="lazy"
+            />
+          </div>
+          <div></div>
+        </div>
+
+        <!--FILOSOFIA-->
+
+        <div class="row mt-2" id="filosofia">
+          <div class="col-12 col-md-6 col-lg-6 filoImg">
+            <img
+              class=""
+              src="./assets/media/boita_img6.png"
+              alt="Boita Fuoriserie filosofia"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-6 align-content-center oswald-front-welcome"
+          >
+            <h2 class="mt-3">FILOSOFIA</h2>
+            <p>
+              La filosofia di <strong>Boita Fuoriserie</strong> si basa su tre
+              pilastri fondamentali:
+              <strong>Passione, Perfezione, e Tradizione.</strong> Ogni progetto
+              che intraprendiamo è guidato dalla nostra dedizione nel mantenere
+              vive le tecniche tradizionali di costruzione e restauro,
+              arricchendole con l'innovazione tecnologica per offrire un
+              prodotto di eccellenza. Crediamo fermamente nell'importanza di
+              unire l'esperienza artigianale con la precisione delle moderne
+              tecnologie, per creare automobili che non siano solo belle, ma
+              anche funzionali e durature.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER-->
+
+    <footer class="footer mt-5 roboto-serif-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="./">
+              <img
+                src="assets/media/Boita_PNG_BIANCO.png"
+                alt="Logo Boita Fuoriserie"
+              />
+            </a>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#chisiamo">Chi Siamo</a></li>
+              <li><a href="#visionemissione">Visione&Missione</a></li>
+              <li><a href="servizi.html">Servizi</a></li>
+              <li><a href="#filosofia">Filosofia</a></li>
+              <li><a href="progetti.html">Progetti</a></li>
+              <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+          </div>
+          <div class="social-section text-center mt-4">
+            <h4 class="bebas-neue-regular">Seguici su</h4>
+            <ul class="list-inline mt-3 fs-1 footer-social">
+              <li class="list-inline-item">
+                <a href="#" target="_blank"
+                  ><i class="fab fa-facebook-square"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.instagram.com/boitafuoriserie/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="">© 2024 Boita Fuoriserie S.R.L. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Collegamento a Bootstrap JS e dipendenze -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/style/js/script.js"></script>
+  </body>
+</html>
