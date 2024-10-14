@@ -1,5 +1,9 @@
 .oswald-front-navbar {
+<<<<<<< HEAD
     font-family: "Jost", sans-serif;
+=======
+    font-family: "Oswald", sans-serif;
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -9,7 +13,10 @@
     width: 100%;
     padding: 0 20px;
     background-color: rgba(255, 255, 255, 0.923);
+<<<<<<< HEAD
     font-size: 20px;
+=======
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
 }
 .logoCustom{
    height: 110px;

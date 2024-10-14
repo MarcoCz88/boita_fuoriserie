@@ -1,5 +1,9 @@
 .roboto-serif-footer {
+<<<<<<< HEAD
     font-family: "Jost", sans-serif;
+=======
+    font-family: "Oswald", sans-serif;
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
     font-weight: 300;
     font-style: normal;
 }
@@ -58,7 +62,11 @@
 .footer-links a {
     color: #ffffff;
     text-decoration: none;
+<<<<<<< HEAD
     font-size: 20px;
+=======
+    font-size: 16px;
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
 }
 
 .social-section {

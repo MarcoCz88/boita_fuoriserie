@@ -1,5 +1,9 @@
 .oswald-front-progetti {
+<<<<<<< HEAD
     font-family: "Jost", sans-serif;
+=======
+    font-family: "Oswald", sans-serif;
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
     font-weight: 300;
   }
   
@@ -9,8 +13,13 @@
   }
   
   .dot {
+<<<<<<< HEAD
     height: 20px;
     width: 20px;
+=======
+    height: 25px;
+    width: 25px;
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
     background-color: #696666;
     border-radius: 50%;
     display: inline-block;
@@ -21,6 +30,7 @@
   .dot.active {
     background-color: rgb(14, 13, 13);
   }
+<<<<<<< HEAD
   .textSizeProget{
     font-size: 24px;
   }
@@ -32,6 +42,14 @@
     overflow: hidden; 
     
   }
+=======
+  
+  .card-container {
+    display: none;
+    height: 45vh;
+  }
+  
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
   @media (max-width: 768px) {
     .card-container {
       height: 60vh;
@@ -42,11 +60,16 @@
     display: block;
   }
   
+<<<<<<< HEAD
   .card-container .card2 {
+=======
+  .card-container .card {
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
     border-radius: 16px;
     overflow: hidden; 
   }
   
+<<<<<<< HEAD
   .card2 img {
     border-top-right-radius: 0; 
     border-bottom-right-radius: 0; 
@@ -54,6 +77,13 @@
   .card-text2 {
     font-size: 24px;
   }
+=======
+  .card img {
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+  }
+  
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
   .position-relative {
     position: relative;
   }
@@ -94,12 +124,20 @@
   }
   
   .projects-carousel-control-prev {
+<<<<<<< HEAD
     left: -20px;
+=======
+    left: -45px;
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
     top: 130px;
   }
   
   .projects-carousel-control-next {
+<<<<<<< HEAD
     right: 0px;
+=======
+    right: -35px;
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
     top: 130px;
   }
   
@@ -125,14 +163,24 @@
   
   .projects-carousel-control-prev-icon:after {
     content: '<';
+<<<<<<< HEAD
     font-size: 60px;
     color: rgba(0, 0, 0, 0.547);
+=======
+    font-size: 80px;
+    color: rgba(0, 0, 0, 0.802);
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
   }
   
   .projects-carousel-control-next-icon:after {
     content: '>';
+<<<<<<< HEAD
     font-size: 60px;
     color: rgba(0, 0, 0, 0.547);
+=======
+    font-size: 80px;
+    color: rgba(0, 0, 0, 0.802);
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
   }
   
   button.carousel-control-prev:focus,
@@ -146,4 +194,8 @@
     .mtProgetti{
         margin-top: 10%;
     }
+<<<<<<< HEAD
 }  
+=======
+}  
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b

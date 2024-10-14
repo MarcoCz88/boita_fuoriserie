@@ -1,5 +1,9 @@
 .oswald-front-servizi {
+<<<<<<< HEAD
   font-family: "Jost", sans-serif;
+=======
+  font-family: "Oswald", sans-serif;
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
@@ -21,7 +25,10 @@
   max-height: 1000px; /* Imposta un valore sufficientemente grande per coprire il contenuto */
   transition: 0.3s;
   color: #ffffff;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
 }
 .show-more-btn {
   cursor: pointer;
@@ -57,12 +64,16 @@
   bottom: 0px;
   width: 100%;
 }
+<<<<<<< HEAD
 .card-text {
   font-size: 24px;
 }
 .card-title {
   font-size: 24px;
 }
+=======
+
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
 .card-img-top {
   width: 100%;
   height: 400px;
@@ -75,7 +86,10 @@
 }
 .mtServizi {
   margin-top: 100px;
+<<<<<<< HEAD
   font-size: 24px;
+=======
+>>>>>>> 6bc66683a2ac8bacb7b9ffe377bb29d9af5b4b5b
 }
 @media (min-width: 992px) {
   .mtServizi {
