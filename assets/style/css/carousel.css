@@ -112,19 +112,17 @@
   margin-right: 16px; 
 }
 .carousel-logo2{
-  height: 100vh;
+  height: 40vh;
   width: auto;
-  margin-bottom:-700px;
-  margin-top: -50px;
+  margin-top: -150px;
   opacity: 0.2;
 }
 @media (min-width: 992px) {
   .carousel-logo2{
-    height: 50vh;
+    height: 40vh;
     width: auto;
-    margin-bottom: -150px;
-    margin-top: -200px;
     opacity: 0.5;
+    margin-bottom: -100px;
   }
 }
 .swiper-pagination {
