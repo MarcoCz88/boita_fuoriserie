@@ -114,7 +114,8 @@
 .carousel-logo2{
   height: 40vh;
   width: auto;
-  margin-top: -150px;
+  margin-top: 250px;
+  margin-bottom: -590px;
   opacity: 0.2;
 }
 @media (min-width: 992px) {
@@ -123,10 +124,11 @@
     width: auto;
     opacity: 0.5;
     margin-bottom: -100px;
+    margin-top: -80px;
   }
 }
 .swiper-pagination {
-  bottom: 30px !important;
+  bottom: 25px !important;
   position: absolute;
   z-index: 10;
   width: 100%;
