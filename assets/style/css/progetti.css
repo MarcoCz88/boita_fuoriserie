@@ -26,6 +26,14 @@
   .textSizeProget{
   font-size: 24px;
   }
+  .textCardPosition{
+    text-align: center;
+  }
+  @media (min-width: 992px) {
+    .textCardPosition{
+      text-align: left;
+    }
+  }
   .card-container {
   display: none;
   height: 100%;
@@ -58,6 +66,7 @@
   }
   .card-text2{
   font-size: 24px;
+  
   }
   
   .position-relative {

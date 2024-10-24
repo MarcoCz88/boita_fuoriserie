@@ -17,7 +17,7 @@
 }
 
 .carousel-caption p {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 @media (min-width: 992px) {
@@ -124,7 +124,7 @@
     width: auto;
     opacity: 0.5;
     margin-bottom: -100px;
-    margin-top: -80px;
+    margin-top: -95px;
   }
 }
 .swiper-pagination {
