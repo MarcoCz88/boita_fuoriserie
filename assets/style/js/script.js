@@ -41,12 +41,12 @@ $(document).ready(function() {
     }
 
     // SERVIZI
-    $('.show-more-btn').click(function() {
-        const moreContent = $(this).prev();
-        $('.show-more-content').not(moreContent).removeClass('expanded').next().text('Mostra di più');
-        moreContent.toggleClass('expanded');
-        $(this).text(moreContent.hasClass('expanded') ? 'Mostra di meno' : 'Mostra di più');
-    });
+    // $('.show-more-btn').click(function() {
+    //     const moreContent = $(this).prev();
+    //     $('.show-more-content').not(moreContent).removeClass('expanded').next().text('Mostra di più');
+    //     moreContent.toggleClass('expanded');
+    //     $(this).text(moreContent.hasClass('expanded') ? 'Mostra di meno' : 'Mostra di più');
+    // });
 
     // PROGETTI
     const dots = $('.dot');

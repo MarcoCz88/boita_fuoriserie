@@ -8,13 +8,7 @@
 .show-more-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-out; /* Apertura lenta */
   font-size: 16px;
-}
-
-.show-more-content.expanded {
-  max-height: 1000px; /* Imposta un valore sufficientemente grande per coprire il contenuto */
-  transition: max-height 1s ease-in; /* Chiusura più veloce */
 }
 
 .show-more-btn:hover + .show-more-content {
@@ -74,17 +68,27 @@
   border-radius: 10%;
 }
 .mtServizi {
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: 24px;
 }
 @media (min-width: 992px) {
   .mtServizi {
-    margin-top: 150px;
+    margin-top: 130px;
   }
 }
 @media (max-width: 750px) {
   .mtServizi {
-    margin-top: 180px;
+    margin-top: 170px;
     margin-bottom: 50px;
+  }
+}
+.serviziImgSize{
+  height: auto;
+  max-width: 90%;
+}
+@media (min-width: 992px) {
+  .serviziImgSize{
+    height: auto;
+    max-width: 68%;
   }
 }
