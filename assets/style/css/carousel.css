@@ -124,7 +124,7 @@
   }
 }
 .swiper-pagination {
-  bottom: -5px !important;
+  bottom: -30px !important;
   position: absolute;
   z-index: 10;
   width: 100%;
