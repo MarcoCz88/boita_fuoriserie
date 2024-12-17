@@ -17,10 +17,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.swiper-arrow {
-  color: #fff;
-  margin-left: 16px !important;
-}
+
 #contactButton{
     border-radius: 24px;
     padding: 10px 32px;
