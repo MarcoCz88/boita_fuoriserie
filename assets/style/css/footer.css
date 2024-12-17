@@ -90,7 +90,7 @@
     color: #ffffff; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1208px) {
     .footer-content {
         flex-direction: column;
         align-items: center;
